@@ -31,23 +31,22 @@ function Lamp(name, power, color) {
 
 Lamp.prototype = new ElectricalAppliance();
 Lamp.prototype.changeColor = function(newColor) {
-  console.log('Change color for ' + this.name);
+  console.log("Change color for " + this.name);
   this.color = newColor;
 }
 
-computer = new Computer('my love', 1020, 'HP', 'gaming');
+computer = new Computer("my love", 1020, "HP", "gaming");
 console.log(computer);
 computer.plugIn();
 console.log(computer);
 computer.plugOut();
 console.log(computer);
 
-
-lamp = new Lamp('my lamp', 121, 'red');
+lamp = new Lamp("my lamp", 121, "red");
 console.log(lamp);
 lamp.plugIn();
 console.log(lamp);
 lamp.plugOut();
 console.log(lamp);
-lamp.changeColor('yellow');
+lamp.changeColor("yellow");
 console.log(lamp);
